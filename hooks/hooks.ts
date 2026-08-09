@@ -10,7 +10,7 @@ setDefaultTimeout(30000);
 
 Before(async function () {
   const newBrowser = await chromium.launch({
-    headless: false
+    headless: true
   });
 
   setBrowser(newBrowser);
