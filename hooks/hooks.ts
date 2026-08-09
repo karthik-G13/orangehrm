@@ -8,16 +8,11 @@ import {
 
 setDefaultTimeout(30000);
 
-Before(async function () {
-  const newBrowser = await chromium.launch({
-    headless: true
-  });
-
-  setBrowser(newBrowser);
-
-  const newPage = await newBrowser.newPage();
-
-  setPage(newPage);
+Before(async function (){
+  const newbrowser=await chromium.launch({headless:false})
+  const newpage=await newbrowser.newPage()
+  setBrowser(newbrowser)
+  setPage(newpage)
 });
 
 After(async function () {

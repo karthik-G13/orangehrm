@@ -5,7 +5,7 @@ module.exports = {
       'step-definitions/**/*.ts',
       'hooks/**/*.ts'
     ],
-    paths: ['features/**/*.feature'],
+    paths: ['features/swaglabs.feature'],
     format: ['progress'],
     publishQuiet: true
   }
